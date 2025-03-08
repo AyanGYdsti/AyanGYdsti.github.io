@@ -1,10 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let skills = ["HTML", "CSS", "JavaScript", "PHP", "Laravel"];
-    let skillList = document.getElementById("skill-list");
+document.getElementById("imageInput").addEventListener("change", function(event) {
+    const preview = document.getElementById("preview");
+    const file = event.target.files[0];
 
-    skills.forEach(skill => {
-        let li = document.createElement("li");
-        li.textContent = skill;
-        skillList.appendChild(li);
-    });
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            preview.src = e.target.result;
+            preview.style.display = "block";
+        };
+        reader.readAsDataURL(file);
+    }
 });
