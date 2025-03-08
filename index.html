@@ -8,27 +8,103 @@
 </head>
 <body>
     <header>
-        <h1>Portofolio Saya</h1>
+        <div class="container">
+            <h1>Nama Anda</h1>
+            <p>Web Developer | Network Engineer | Data Analyst</p>
+        </div>
     </header>
-    <section class="container">
-        <h2>Yayan Gisna Yudasti</h2>
-        <p>Saya adalah seorang  yang memiliki ketertarikan dalam bidang Network </p>
-    </section>
-    <section class="container">
-        <h2>Proyek</h2>
+
+    <nav>
         <ul>
-            <p>Proyek 1 - Load Balancing</p>
-            <p>Proyek 2 - Manajemen Bandwidth</p>
-            <p>Proyek 3 - PPPoE</p>
+            <li><a href="#about">Tentang Saya</a></li>
+            <li><a href="#experience">Pengalaman</a></li>
+            <li><a href="#education">Pendidikan</a></li>
+            <li><a href="#skills">Keterampilan</a></li>
+            <li><a href="#projects">Proyek</a></li>
+            <li><a href="#contact">Kontak</a></li>
         </ul>
+    </nav>
+
+    <section id="about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>Saya adalah seorang profesional di bidang teknologi informasi dengan pengalaman dalam pengembangan web, administrasi jaringan, dan analisis data. Saya memiliki keterampilan dalam berbagai bahasa pemrograman dan alat IT.</p>
+        </div>
     </section>
-    <section class="container">
-        <h2>Kontak</h2>
-        <p>Email: yangisna02@gmail.com</p>
+
+    <section id="experience">
+        <div class="container">
+            <h2>Pengalaman Kerja</h2>
+            <div class="job">
+                <h3>Software Engineer - PT Teknologi Maju</h3>
+                <p><em>Januari 2023 - Sekarang</em></p>
+                <ul>
+                    <li>Merancang dan mengembangkan aplikasi berbasis web menggunakan Laravel dan Vue.js.</li>
+                    <li>Mengelola database MySQL dan PostgreSQL.</li>
+                    <li>Berkolaborasi dengan tim dalam pengembangan produk.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Network Engineer - XYZ Network</h3>
+                <p><em>Juli 2021 - Desember 2022</em></p>
+                <ul>
+                    <li>Mengelola konfigurasi router dan switch Mikrotik dan Cisco.</li>
+                    <li>Melakukan troubleshooting jaringan dan meningkatkan keamanan sistem.</li>
+                    <li>Mengoptimalkan infrastruktur jaringan dengan VLAN dan VPN.</li>
+                </ul>
+            </div>
+        </div>
     </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Pendidikan</h2>
+            <div class="edu">
+                <h3>Universitas Teknologi Digital</h3>
+                <p><em>Sarjana Teknik Informatika, 2018 - 2022</em></p>
+                <p>Fokus pada pemrograman, administrasi jaringan, dan analisis data.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Keterampilan</h2>
+            <ul id="skill-list">
+                <!-- Daftar keterampilan akan diisi oleh JavaScript -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Proyek</h2>
+            <div class="project">
+                <h3>Aplikasi E-Commerce</h3>
+                <p>Mengembangkan aplikasi e-commerce menggunakan Laravel dan Vue.js dengan sistem pembayaran terintegrasi.</p>
+            </div>
+            <div class="project">
+                <h3>Sistem Monitoring Jaringan</h3>
+                <p>Membangun sistem monitoring jaringan berbasis Python untuk memantau lalu lintas jaringan secara real-time.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak</h2>
+            <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/namamu" target="_blank">linkedin.com/in/namamu</a></p>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 Ayann. Semua Hak Dilindungi.</p>
+        <div class="container">
+            <p>&copy; 2025 Nama Anda. Semua Hak Dilindungi.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
